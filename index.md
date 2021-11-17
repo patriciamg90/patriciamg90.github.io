@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Spatial by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<h1><strong><a href="index.html"></a></strong></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="research.html">Research</a></li>
+						
+						<li><a href="teaching.html">Teaching</a></li>
+						<li><a href="service.html">Service</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="miscellaneous.html">Miscellaneous</a></li>
+						
+						
+					</ul>
+				</nav>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h2>F. Patricia Medina</h2>
+				<p>Mathematician <br /> </p>
+				<ul class="actions">
+					<a href="V2-FPatriciaMedinaCV_R_T.pdf" class="button special big">CV</a> </li> 
+				</ul>
+			</section>
+
+			<!-- One -->
+				<section id="one" class="wrapper style1">
+					<div class="container 75%">
+						<div class="row 200%">
+							<div class="6u 12u$(medium)">
+								<header class="major">
+								
+									<div class="image rounded"><img src="images/IMG_Patricia_small.jpg" alt="" /></div>
+									
+									<p>  </p>
+								</header>
+							</div>
+							<div class="6u$ 12u$(medium)">
+								<p>Welcome! I am a Postdoctoral Scholar in the Mathematical Sciences Department at Worcester Polytechnic Institute, Worcester. 
+								I obtained my Ph.D. in Mathematics under the supervision of Dr. Malgorzata Peszynska. 
+								My general research interests are machine learning, numerical analysis, partial differential equations and applied functional analysis. My postdoc mentor at
+								WPI was Dr. Randy Paffenroth.</p>
+								
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Two -->
+				<section id="two" class="wrapper style2 special">
+					<div class="container">
+						<header class="major">
+							<h2>Research Areas</h2>
+							<p>More than four projects</p>
+						</header>
+						<div class="row 150%">
+							<div class="6u 12u$(xsmall)">
+								<div class="image fit captioned">
+									<img src="images/SimHydrates.png" alt="" />
+									<h3>Mathematical treatment and simulations for applications in geosciences.</h3>
+								</div>
+							</div>
+							<div class="6u$ 12u$(xsmall)">
+								<div class="image fit captioned">
+									<img src="images/Bridge.png" alt="" />
+									<h3>Deep learning for various data types (LiDAR, crowd flow) </h3>
+								</div>
+							</div>
+						</div>
+						<ul class="actions">
+							<!--- <li><a href="#" class="button special big">Nulla luctus</a></li>  -->
+							<!-- <li><a href="#" class="button big">Sed vulputate</a></li>   -->
+						</ul>
+					</div>
+				</section>
+
+			<!-- Three -->
+				<section id="three" class="wrapper style1">
+					<div class="container">
+						<header class="major special">
+							<h2>Projects</h2>
+							<p>Topics</p>
+						</header>
+						<div class="feature-grid">
+							<div class="feature">
+								<div class="image rounded"><img src="images/Coalbed.png" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Adsorption</h4>
+										<p> </p>
+									</header>
+									<p>Methane in coal beds  </p>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="image rounded"><img src="images/Japan-flammible-ice-methane-hydrate.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Methane hydrates</h4>
+										<p></p>
+									</header>
+									<p> Mathematical treatment and simulations of the evolution of methane hydrates in sea-beds  </p>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="image rounded"><img src="images/JS_usgs_Golden.png" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>LiDAR data</h4>
+										<p>Deep learning in LiDAR data</p>
+									</header>
+									<p>  </p>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="image rounded"><img src="images/crowd-above.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Crowd flow</h4>
+										<p>Deep learning using simulated crowd flow data</p>
+									</header>
+									<p>   </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Four -->
+				<section id="four" class="wrapper style3 special">
+					<div class="container">
+						<header class="major">
+							<h2>  </h2>
+							<p>  </p>
+						</header>
+						<ul class="actions">
+<!-- <li><a href="#" class="button special big">Get in touch</a></li> -->
+						</ul>
+					</div>
+				</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						 
+						<!--<li><a href="#" class="icon fa-twitter"></a></li> -->
+						
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
