@@ -80,41 +80,46 @@
 					computation and real-world data.
 				</p>
 
-				<hr />
+				
 
-				<p>
-					<span class="image left"><img src="images/TreeDiagram02.jpg" alt="Dyadic tree diagram" /></span>
-					<h4>Machine learning on LiDAR / 3D point clouds</h4>
-					My work on LiDAR data grew out of research collaborations in data science and geometry-informed learning.
-					A major motivation is that point cloud data are high-dimensional, noisy, and often contain structure at
-					multiple scales. I am interested in improving classification pipelines by combining:
-					(i) mathematically motivated feature engineering, (ii) dimensionality reduction, and (iii) learning models
-					suited to geometric data.
-				</p>
+				
 
-				<p>
-					One line of work focuses on using learned representations (e.g., autoencoders) together with engineered features
-					to classify points into relevant classes (for example, distinguishing ground versus non-ground points and refining
-					labels based on morphology and local structure). Typical features in LiDAR datasets include spatial coordinates,
-					intensity, number of returns, and (when available) RGB information. Beyond standard feature sets, my goal is to
-					develop descriptors motivated by rigorous mathematical ideas (e.g., measure-theoretic quantities defined on
-					dyadic neighborhood structures) to improve performance and interpretability.
-				</p>
+<h3>Machine Learning for Geometric Data and Representation Learning</h3>
+<span class="image right"><img src="images/3layer-autoencoder.jpg" alt="Autoencoder diagram" /></span>
+<p>
+My recent research focuses on developing mathematically grounded approaches for machine learning on geometric and high-dimensional data. A recurring theme is the construction of informative representations that capture meaningful structure in complex datasets while remaining interpretable. This work combines ideas from machine learning, geometry, measure theory, and dimensionality reduction.
+</p>
 
-				<hr />
+<p>
+A central application area is 3D LiDAR point clouds. LiDAR data provide detailed geometric descriptions of natural and built environments and play an important role in applications such as forest monitoring, environmental assessment, terrain mapping, and urban analysis. The resulting datasets are often large, noisy, and highly structured, making representation and feature design critical components of successful learning pipelines.
+</p>
+<span class="image left"><img src="images/TreeDiagram02.jpg" alt="Dyadic tree diagram" /></span>
+<p>
+My work investigates how feature engineering, dimensionality reduction, and machine learning algorithms interact in the classification of LiDAR point clouds. In collaboration with colleagues at Worcester Polytechnic Institute, I have studied classification frameworks that combine local geometric information, engineered features, and learning models such as k-nearest neighbors, Random Forests, and neural-network-based methods.
+</p>
 
-				<p>
-					<span class="image right"><img src="images/3layer-autoencoder.jpg" alt="Autoencoder diagram" /></span>
-					<h4>Remote sensing: vegetation classification and climate-related applications</h4>
-					Over the last decade, collaborators in remote sensing and geospatial analysis have collected and analyzed LiDAR point cloud
-					data across different sites using both direct (labor-intensive) and indirect methods. A motivating application is estimating
-					forest structure parameters from LiDAR, including leaf area index (LAI) and related canopy measures. A general approach is to
-					combine engineered features and multi-scale geometric descriptors with dimensionality reduction (linear methods such as PCA and
-					nonlinear methods such as autoencoders), followed by learning models such as feed-forward neural networks or ensemble methods.
-					Automating classification and structural estimation can significantly accelerate analysis pipelines for large-scale forest data.
-				</p>
+<p>
+One line of research explores the use of <em>product coefficients</em>, multiscale descriptors arising from measure-theoretic representations, as features for machine learning. Rather than introducing the coefficients themselves, my work investigates how they can be adapted to local neighborhoods in point-cloud data and incorporated into machine learning pipelines. These descriptors provide information about local geometric organization at multiple scales and complement traditional spatial attributes.
+</p>
 
-				<hr />
+$$
+a_S =
+\frac{\mu(L(S))-\mu(R(S))}
+{\mu(L(S))+\mu(R(S))}
+$$
+
+<p>
+Here \(a_S\) denotes a product coefficient associated with a dyadic set \(S\), while \(L(S)\) and \(R(S)\) denote its dyadic children. Collections of such coefficients provide multiscale information about the distribution of mass within local neighborhoods and can be used as geometric descriptors for machine learning tasks.
+</p>
+
+<p>
+A second line of work studies dimensionality reduction and representation learning. I have investigated both classical approaches such as Principal Component Analysis (PCA) and nonlinear methods based on autoencoders. Recent results suggest that combining product coefficients with learned latent representations can improve classification performance relative to using spatial coordinates alone or linear dimensionality reduction methods.
+</p>
+
+<p>
+More broadly, I am interested in understanding how mathematically interpretable representations can complement modern machine learning methods. Current projects explore geometric feature extraction, representation learning, dynamical autoencoder architectures, and applications to LiDAR and other scientific datasets with complex multiscale structure.
+</p>
+
 
 				
 
