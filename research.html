@@ -11,6 +11,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="Research page for Dr. Patricia Medina: mathematical frameworks for machine learning; LiDAR/3D point clouds; dimensionality reduction; numerical analysis; PDE modeling; functional analysis." />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script>
+		MathJax = {
+		  tex: {
+		    inlineMath: [['$', '$'], ['\\(', '\\)']]
+		  }
+		};
+		</script>
+
+		<script async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+		</script>
 	</head>
 
 	<body>
@@ -111,47 +122,52 @@
 
   
 <span class="image left"><img src="images/burning-ice.jpg" alt="Methane hydrates" /></span>
-				<p> My earlier research focused on mathematical models for methane hydrate formation and dissociation in porous media. 
-					Methane hydrates are ice-like crystalline structures that form under high-pressure and low-temperature conditions. 
-					They are important in geoscience because they are connected both to potential energy resources and to environmental 
-					questions involving methane release. </p> <p> 
-						In this work, the evolution of methane hydrate was modeled through nonlinear partial differential equations
-						with phase transitions and solubility constraints. A simplified formulation involves a conservation law coupled 
-						to a multivalued graph constraint:
-					
-					<p>
-In this work, the evolution of methane hydrate was modeled through nonlinear partial differential equations with phase transitions and solubility constraints. A simplified model can be represented schematically by
-</p>
-
-<div style="text-align:center; font-size:125%; margin:20px 0;">
-u<sub>t</sub> − Δv = f
-</div>
-
-<div style="text-align:center; font-size:125%; margin:20px 0;">
-v ∈ α(x,u)
-</div>
-
-<div style="text-align:center; font-size:125%; margin:20px 0;">
-u = Sv + R(1 − S)
-</div>
+				```html
+<h3>Methane Hydrates and Phase Transitions in Porous Media</h3>
 
 <p>
-Here <em>v</em> denotes methane dissolved in the liquid phase, <em>S</em> represents liquid saturation, and <em>u</em> denotes the total methane content. The relation v ∈ α(x,u) describes the phase transition between dissolved methane and methane hydrate.
+My earlier research focused on mathematical models for methane hydrate formation and dissociation in porous media. Methane hydrates are ice-like crystalline structures that form under conditions of high pressure and low temperature and are of interest in both energy and environmental applications.
 </p>
 
 <p>
-The resulting model naturally leads to complementarity conditions of the form
+The mathematical models involve nonlinear partial differential equations with phase transitions and solubility constraints. A simplified formulation can be written as
 </p>
 
-<div style="text-align:center; font-size:125%; margin:20px 0;">
-v ≤ v* &nbsp;&nbsp;&nbsp;
-S ≤ 1 &nbsp;&nbsp;&nbsp;
-(v* − v)(1 − S) = 0
-</div>
-								
-								In collaboration with colleagues at Oregon State University, I studied well-posedness, comparison principles, and numerical approximation for this class of models. The analysis combined tools from monotone operator theory, convex analysis, nonlinear PDEs, and numerical analysis. For the numerical solution, the multivalued phase constraint was treated directly using fully implicit schemes and semismooth Newton methods, avoiding regularization of the graph. </p> <p> This work continues to influence my current interest in porous media, reduced-order modeling, geometric data analysis, and scientific machine learning. In particular, I am interested in how mathematical modeling and data-driven methods can be combined to study complex multiscale systems with evolving geometry and effective physical properties. </p>
+$$
+\frac{\partial u}{\partial t}
+-\nabla\cdot\big(D\nabla \chi\big)
+= f,
+\qquad
+\chi \in \alpha(x,u),
+\qquad
+u=\chi S+R(1-S).
+$$
 
-				<hr />
+<p>
+Here \(u\) denotes the total methane content, \(\chi\) the dissolved methane concentration, and \(S\) the liquid saturation. The multivalued graph \(\alpha(x,u)\) describes the transition between dissolved methane and methane hydrate.
+</p>
+
+<p>
+The phase constraint can be expressed through complementarity conditions
+</p>
+
+$$
+\chi \leq \chi^{*}(x),
+\qquad
+S \leq 1,
+\qquad
+\big(\chi^{*}(x)-\chi\big)(1-S)=0,
+$$
+
+<p>
+which encode the physical principle that hydrate may form only when methane reaches its maximum solubility.
+</p>
+
+<p>
+In collaboration with colleagues at Oregon State University, I studied well-posedness, comparison principles, and numerical approximation for this class of models using techniques from nonlinear PDEs, monotone operator theory, convex analysis, and numerical analysis. More recently, I have become interested in connecting porous media models with reduced-order modeling, geometric data analysis, and machine learning methods for complex multiscale systems.
+</p>
+
+
 
 				<p>
 					<span class="image right"><img src="images/AdsorptionProcPoster.png" alt="Adsorption model poster" /></span>
