@@ -111,7 +111,45 @@
 
   
 <span class="image left"><img src="images/burning-ice.jpg" alt="Methane hydrates" /></span>
-				<p> My earlier research focused on mathematical models for methane hydrate formation and dissociation in porous media. Methane hydrates are ice-like crystalline structures that form under high-pressure and low-temperature conditions. They are important in geoscience because they are connected both to potential energy resources and to environmental questions involving methane release. </p> <p> In this work, the evolution of methane hydrate was modeled through nonlinear partial differential equations with phase transitions and solubility constraints. A simplified formulation involves a conservation law coupled to a multivalued graph constraint: </p> <p style="text-align:center;"> \[ \frac{\partial u}{\partial t} - \Delta v = f, \qquad v \in \alpha(x;u), \qquad u = S v + R(1-S), \] </p> <p> Here \(v\) represents methane solubility in the liquid phase, \(S\) represents liquid saturation, and \(u\) represents the total methane content. The graph relation \(v \in \alpha(x;u)\) encodes the phase transition between dissolved methane and hydrate formation. This formulation leads naturally to complementarity constraints of the form </p> <p style="text-align:center;"> \[ v \leq v^*(x), \qquad S \leq 1, \qquad \big(v^*(x)-v\big)(1-S)=0, \] </p> <p> where \(v^*(x)\) is the maximum methane solubility determined by pressure, temperature, and salinity. The complementarity condition expresses the physical fact that hydrate forms only when methane reaches its solubility limit. </p> <p> In collaboration with colleagues at Oregon State University, I studied well-posedness, comparison principles, and numerical approximation for this class of models. The analysis combined tools from monotone operator theory, convex analysis, nonlinear PDEs, and numerical analysis. For the numerical solution, the multivalued phase constraint was treated directly using fully implicit schemes and semismooth Newton methods, avoiding regularization of the graph. </p> <p> This work continues to influence my current interest in porous media, reduced-order modeling, geometric data analysis, and scientific machine learning. In particular, I am interested in how mathematical modeling and data-driven methods can be combined to study complex multiscale systems with evolving geometry and effective physical properties. </p>
+				<p> My earlier research focused on mathematical models for methane hydrate formation and dissociation in porous media. 
+					Methane hydrates are ice-like crystalline structures that form under high-pressure and low-temperature conditions. 
+					They are important in geoscience because they are connected both to potential energy resources and to environmental 
+					questions involving methane release. </p> <p> 
+						In this work, the evolution of methane hydrate was modeled through nonlinear partial differential equations
+						with phase transitions and solubility constraints. A simplified formulation involves a conservation law coupled 
+						to a multivalued graph constraint:
+					
+					<p>
+In this work, the evolution of methane hydrate was modeled through nonlinear partial differential equations with phase transitions and solubility constraints. A simplified model can be represented schematically by
+</p>
+
+<div style="text-align:center; font-size:125%; margin:20px 0;">
+u<sub>t</sub> − Δv = f
+</div>
+
+<div style="text-align:center; font-size:125%; margin:20px 0;">
+v ∈ α(x,u)
+</div>
+
+<div style="text-align:center; font-size:125%; margin:20px 0;">
+u = Sv + R(1 − S)
+</div>
+
+<p>
+Here <em>v</em> denotes methane dissolved in the liquid phase, <em>S</em> represents liquid saturation, and <em>u</em> denotes the total methane content. The relation v ∈ α(x,u) describes the phase transition between dissolved methane and methane hydrate.
+</p>
+
+<p>
+The resulting model naturally leads to complementarity conditions of the form
+</p>
+
+<div style="text-align:center; font-size:125%; margin:20px 0;">
+v ≤ v* &nbsp;&nbsp;&nbsp;
+S ≤ 1 &nbsp;&nbsp;&nbsp;
+(v* − v)(1 − S) = 0
+</div>
+								
+								In collaboration with colleagues at Oregon State University, I studied well-posedness, comparison principles, and numerical approximation for this class of models. The analysis combined tools from monotone operator theory, convex analysis, nonlinear PDEs, and numerical analysis. For the numerical solution, the multivalued phase constraint was treated directly using fully implicit schemes and semismooth Newton methods, avoiding regularization of the graph. </p> <p> This work continues to influence my current interest in porous media, reduced-order modeling, geometric data analysis, and scientific machine learning. In particular, I am interested in how mathematical modeling and data-driven methods can be combined to study complex multiscale systems with evolving geometry and effective physical properties. </p>
 
 				<hr />
 
