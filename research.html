@@ -169,14 +169,82 @@ In collaboration with colleagues at Oregon State University, I studied well-pose
 
 
 
-				<p>
-					<span class="image right"><img src="images/AdsorptionProcPoster.png" alt="Adsorption model poster" /></span>
-					<h4>Thermodynamically consistent adsorption models</h4>
-					Multicomponent adsorption is often described by systems of conservation laws whose nonlinear flux terms are derived from isotherms.
-					Many commonly used isotherms (e.g., extended Langmuir variants) are thermodynamically inconsistent. My work studies analysis and numerical
-					approximation of adsorption systems with thermodynamically consistent isotherms that are specified implicitly or obtained from coupled
-					microscopic models, including stability considerations for numerical schemes.
-				</p>
+				
+
+
+				
+<h3>Adsorption Models and Non-Equilibrium Kinetic Systems</h3>
+<span class="image right"><img src="images/AdsorptionProcPoster.png" alt="Adsorption model poster" /></span>
+<p>
+I have also worked on mathematical models for adsorption processes in porous media, motivated in part by applications such as coalbed methane recovery, contaminant transport, and multicomponent gas displacement. In these models, a chemical component may move with the fluid while also being adsorbed onto the solid matrix.
+</p>
+
+<p>
+A basic non-equilibrium adsorption model couples the concentration of the mobile component, denoted by \(u\), with the adsorbed or immobile component, denoted by \(v\):
+</p>
+
+$$
+(\phi u)_t + v_t + \nabla \cdot (q u)
+- \nabla \cdot (\phi d \nabla u) = f,
+$$
+
+$$
+v_t = \alpha \big(g(u)-v\big).
+$$
+
+<p>
+Here \(\phi\) denotes porosity, \(q\) is the velocity field, \(d\) is a diffusion or dispersion coefficient, and \(\alpha>0\) is a kinetic rate parameter. The function \(g(u)\) describes the adsorption isotherm, which relates the mobile concentration to the equilibrium adsorbed amount.
+</p>
+
+<p>
+In collaboration with Malgorzata Peszynska, I studied stability of numerical schemes for these non-equilibrium kinetic systems. A key idea was to work in weighted spaces where the coupled system becomes symmetric, allowing stability results for implicit, explicit, and implicit-explicit discretizations.
+</p>
+
+<p>
+For example, in the linear case \(g(u)=cu\), the abstract kinetic system can be written as
+</p>
+
+$$
+U' + V' + L U = F,
+$$
+
+$$
+V' + \alpha(V-cU)=0.
+$$
+
+<p>
+Although the system may be nonnormal in the natural variables, a weighted inner product of the form
+</p>
+
+$$
+\left\langle [U,V]^T,[\Phi,\Psi]^T \right\rangle_c
+=
+c\langle U,\Phi\rangle
++
+\langle V,\Psi\rangle
+$$
+
+<p>
+reveals a useful symmetric structure. This transformation makes it possible to establish strong stability of the continuous problem and of associated numerical schemes.
+</p>
+
+<p>
+Earlier work also included adsorption models based on Langmuir-type isotherms. In the single-component case, one commonly uses
+</p>
+
+$$
+a(u)=V_L \frac{bu}{1+bu},
+$$
+
+<p>
+where \(V_L\) is the Langmuir volume capacity and \(b\) is the Langmuir constant. For multicomponent adsorption, the mathematical structure becomes more delicate because thermodynamic consistency may fail for simple explicit extensions of the Langmuir model. This led to interest in implicit isotherm formulations such as the Ideal Adsorbed Solution framework.
+</p>
+
+<p>
+This research connects nonlinear transport, adsorption kinetics, numerical analysis, stability theory, and porous media modeling. It also continues to inform my broader interest in reduced models and data-driven approaches for complex multiscale systems.
+</p>
+
+
 
 			</div>
 		</section>
