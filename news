@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license
+-->
+
+<html>
+	<head>
+		<title>News</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+
+	<style>
+	.gallery {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 15px;
+margin: 20px 0;
+}
+
+.gallery figure {
+margin: 0;
+}
+
+.gallery img {
+width: 100%;
+max-width: 220px;
+height: auto;
+display: block;
+margin: 0 auto;
+border-radius: 6px;
+}
+
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header id="header">
+		<h1><strong><a href="index.html"> </a></strong></h1>
+		<nav id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="teaching.html">Teaching</a></li>
+				<li><a href="service.html">Service</a></li>
+        <li><a href="news.html"> News</a></li>
+				<li><a href="about.html">About</a></li>
+        
+				<li><a href="miscellaneous.html">Miscellaneous</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<a href="#menu" class="navPanelToggle">
+		<span class="fa fa-bars"></span>
+	</a>
+
+	<!-- Main -->
+	<section id="main" class="wrapper">
+		<div class="container">
+
+			<header class="major special">
+    <h2>News</h2>
+    <p>
+        Recent research activities, awards, conferences,
+        mentoring, and professional updates.
+    </p>
+   </header>
+
+		<h2>2026</h2>
+
+<hr>
+
+<h3>June 2026</h3>
+
+<h4>AMS/NSF Established Mathematician Travel Grant</h4>
+
+<p>
+I was selected to receive an
+<strong>AMS/NSF Established Mathematician Travel Grant</strong>
+to attend the
+<strong>2026 International Congress of Mathematicians (ICM 2026)</strong>
+in Philadelphia.
+The award supports participation in one of the world's premier
+international conferences in the mathematical sciences.
+</p>
+
+<hr>	
+
+			
+
+			
+
+			
+
+			
+
+			
+
+		</div>
+
+
+
+		
+	</section>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+
+</html>
