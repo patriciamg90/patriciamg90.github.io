@@ -24,6 +24,7 @@
 						<li><a href="teaching.html">Teaching</a></li>
 						<li><a href="service.html">Service</a></li>
 						<li><a href="about.html">About</a></li>
+						<li><a href="news.html"><i class="fa fa-star"></i> News</a></li>
 						<li><a href="miscellaneous.html">Miscellaneous</a></li>
 						
 						
