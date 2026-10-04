@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="Research page for Dr. Patricia Medina: mathematical frameworks for machine learning; LiDAR/3D point clouds; dimensionality reduction; numerical analysis; PDE modeling; functional analysis." />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
 		<script>
 		MathJax = {
 		  tex: {
@@ -59,196 +60,175 @@
 				</header>
 
 				<p>
-					My research lies at the intersection of mathematics, machine learning, and scientific computing. I develop mathematically 
-					grounded representations and learning methods for high-dimensional and geometric data, with current applications to LiDAR 
-					and 3D point-cloud classification. My work draws on ideas from functional analysis, measure theory, dimensionality reduction, and numerical analysis.
-
-My earlier research focused on nonlinear PDEs and numerical methods for porous-media models, particularly methane hydrates and adsorption 
-					processes. This background continues to shape my interest in interpretable, structure-aware approaches to complex data and multiscale systems.
+					My research lies at the intersection of mathematics, machine learning, and scientific computing. 
+					I develop mathematically grounded representations and learning methods for high-dimensional and 
+					geometric data, with current applications to LiDAR and 3D point-cloud classification. My work draws 
+					on ideas from functional analysis, measure theory, dimensionality reduction, and numerical analysis.
 				</p>
 
-				
-
-				
-
-<h3>Machine Learning for Geometric Data and Representation Learning</h3>
-
-<p>
-My recent research focuses on developing mathematically grounded approaches for machine learning on geometric and high-dimensional data. 
-	A recurring theme is the construction of informative representations that capture meaningful structure in complex datasets while 
-	remaining 
-	interpretable. This work combines ideas from machine learning, geometry, measure theory, and dimensionality reduction.
-</p>
-
-<p>
-A central application area is 3D LiDAR point clouds. LiDAR data provide detailed geometric descriptions of natural and built environments 
-	and play an important role in applications such as forest monitoring, environmental assessment, terrain mapping, and urban analysis. 
-	The resulting datasets are often large, noisy, and highly structured, making representation and feature design critical components of 
-	successful learning pipelines.
-</p>
-<span class="image left"><img src="images/TreeDiagram02.jpg" alt="Dyadic tree diagram" /></span>
-<p>
-My work investigates how feature engineering, dimensionality reduction, and machine learning algorithms interact in the classification of 
-	LiDAR point clouds. In collaboration with colleagues at Worcester Polytechnic Institute, I have studied classification frameworks that 
-	combine local geometric information, engineered features, and learning models such as k-nearest neighbors, Random Forests, and
-	neural-network-based methods.
-</p>
-
-<p>
-One line of research explores the use of <em>product coefficients</em>, multiscale descriptors arising from measure-theoretic representations,
-	as features for machine learning. Rather than introducing the coefficients themselves, my work investigates how they can be adapted to 
-	local neighborhoods in point-cloud data and incorporated into machine learning pipelines. These descriptors provide information about 
-	local geometric organization at multiple scales and complement traditional spatial attributes.
-</p>
-
-$$
-a_S =
-\frac{\mu(L(S))-\mu(R(S))}
-{\mu(L(S))+\mu(R(S))}
-$$
-
-<p>
-Here \(a_S\) denotes a product coefficient associated with a dyadic set \(S\), while \(L(S)\) and \(R(S)\) denote its dyadic children. Collections of such coefficients provide multiscale information about the distribution of mass within local neighborhoods and can be used as geometric descriptors for machine learning tasks.
-</p>
-
-<p>
-A second line of work studies dimensionality reduction and representation learning. I have investigated both classical approaches such as Principal Component Analysis (PCA) and nonlinear methods based on autoencoders. Recent results suggest that combining product coefficients with learned latent representations can improve classification performance relative to using spatial coordinates alone or linear dimensionality reduction methods.
-</p>
-<span class="image right"><img src="images/3layer-autoencoder.jpg" alt="Autoencoder diagram" /></span>
-<p>
-More broadly, I am interested in understanding how mathematically interpretable representations can complement modern machine learning methods. Current projects explore geometric feature extraction, representation learning, dynamical autoencoder architectures, and applications to LiDAR and other scientific datasets with complex multiscale structure.
-</p>
+				<p>
+					My earlier research focused on nonlinear PDEs and numerical methods for porous-media models, 
+					particularly methane hydrates and adsorption processes. This background continues to shape my 
+					interest in interpretable, structure-aware approaches to complex data and multiscale systems.
+				</p>
 
 
-				
+				<!-- Current Research -->
+				<h2>Current Research</h2>
 
-			<h3>Methane Hydrates and Phase Transitions in Porous Media</h3>
+				<h3>Machine Learning for Geometric Data and Representation Learning</h3>
 
-  
-<span class="image left"><img src="images/burning-ice.jpg" alt="Methane hydrates" /></span>
-			
-<h3>Methane Hydrates and Phase Transitions in Porous Media</h3>
+				<p>
+					My current research develops mathematically grounded approaches for machine learning on geometric 
+					and high-dimensional data. A recurring theme is the construction of representations that capture 
+					meaningful structure in complex datasets while remaining interpretable. This work combines ideas 
+					from machine learning, geometry, measure theory, and dimensionality reduction.
+				</p>
 
-<p>
-My earlier research focused on mathematical models for methane hydrate formation and dissociation in porous media. Methane hydrates are ice-like crystalline structures that form under conditions of high pressure and low temperature and are of interest in both energy and environmental applications.
-</p>
+				<p>
+					A central application area is 3D LiDAR point clouds. These datasets provide detailed geometric 
+					descriptions of natural and built environments and arise in applications including forest monitoring, 
+					environmental assessment, terrain mapping, and urban analysis. Their scale and geometric complexity 
+					make representation and feature design important components of successful learning pipelines.
+				</p>
 
-<p>
-The mathematical models involve nonlinear partial differential equations with phase transitions and solubility constraints. A simplified formulation can be written as
-</p>
+				<span class="image left">
+					<img src="images/TreeDiagram02.jpg" alt="Dyadic tree diagram" />
+				</span>
 
-$$
-\frac{\partial u}{\partial t}
--\nabla\cdot\big(D\nabla \chi\big)
-= f,
-\qquad
-\chi \in \alpha(x,u),
-\qquad
-u=\chi S+R(1-S).
-$$
+				<p>
+					My work investigates how feature engineering, dimensionality reduction, and machine learning algorithms 
+					interact in the classification of LiDAR point clouds. In collaboration with colleagues at Worcester 
+					Polytechnic Institute, I have studied classification frameworks that combine local geometric information, 
+					engineered features, and learning models including k-nearest neighbors, Random Forests, and neural-network-based methods.
+				</p>
 
-<p>
-Here \(u\) denotes the total methane content, \(\chi\) the dissolved methane concentration, and \(S\) the liquid saturation. The multivalued graph \(\alpha(x,u)\) describes the transition between dissolved methane and methane hydrate.
-</p>
+				<h3>Multiscale Representations and Product Coefficients</h3>
 
-<p>
-The phase constraint can be expressed through complementarity conditions
-</p>
+				<p>
+					One line of research explores <em>product coefficients</em>, multiscale descriptors arising from 
+					measure-theoretic representations, as features for machine learning. My work investigates how these 
+					coefficients can be adapted to local neighborhoods in point-cloud data and incorporated into learning 
+					pipelines. They provide information about local geometric organization at multiple scales and complement 
+					traditional spatial attributes.
+				</p>
 
-$$
-\chi \leq \chi^{*}(x),
-\qquad
-S \leq 1,
-\qquad
-\big(\chi^{*}(x)-\chi\big)(1-S)=0,
-$$
+				$$
+				a_S =
+				\frac{\mu(L(S))-\mu(R(S))}
+				{\mu(L(S))+\mu(R(S))}
+				$$
 
-<p>
-which encode the physical principle that hydrate may form only when methane reaches its maximum solubility.
-</p>
+				<p>
+					Here \(a_S\) denotes a product coefficient associated with a dyadic set \(S\), while \(L(S)\) and 
+					\(R(S)\) denote its dyadic children. Collections of these coefficients encode multiscale information 
+					about the distribution of mass within local neighborhoods and can be used as geometric descriptors 
+					for machine learning tasks.
+				</p>
 
-<p>
-In collaboration with colleagues at Oregon State University, I studied well-posedness, comparison principles, and numerical approximation for this class of models using techniques from nonlinear PDEs, monotone operator theory, convex analysis, and numerical analysis. More recently, I have become interested in connecting porous media models with reduced-order modeling, geometric data analysis, and machine learning methods for complex multiscale systems.
-</p>
+				<h3>Dimensionality Reduction and Dynamical Representations</h3>
 
+				<span class="image right">
+					<img src="images/3layer-autoencoder.jpg" alt="Autoencoder diagram" />
+				</span>
 
+				<p>
+					A second direction studies dimensionality reduction and representation learning. I have investigated 
+					both classical approaches such as Principal Component Analysis (PCA) and nonlinear representations 
+					based on autoencoders. Recent work examines how product coefficients and learned latent representations 
+					interact with downstream classification, as well as how architectural choices affect the information 
+					retained in hidden representations.
+				</p>
 
-				
+				<p>
+					Current projects also investigate dynamical autoencoder architectures, including the behavior of hidden 
+					states under repeated transformations. In particular, I am interested in understanding when iterative 
+					architectures preserve informative geometric structure and when their representations collapse toward 
+					low-variability states.
+				</p>
 
-
-				
-<h3>Adsorption Models and Non-Equilibrium Kinetic Systems</h3>
-<span class="image right"><img src="images/AdsorptionProcPoster.png" alt="Adsorption model poster" /></span>
-<p>
-I have also worked on mathematical models for adsorption processes in porous media, motivated in part by applications such as coalbed methane recovery, contaminant transport, and multicomponent gas displacement. In these models, a chemical component may move with the fluid while also being adsorbed onto the solid matrix.
-</p>
-
-<p>
-A basic non-equilibrium adsorption model couples the concentration of the mobile component, denoted by \(u\), with the adsorbed or immobile component, denoted by \(v\):
-</p>
-
-$$
-(\phi u)_t + v_t + \nabla \cdot (q u)
-- \nabla \cdot (\phi d \nabla u) = f,
-$$
-
-$$
-v_t = \alpha \big(g(u)-v\big).
-$$
-
-<p>
-Here \(\phi\) denotes porosity, \(q\) is the velocity field, \(d\) is a diffusion or dispersion coefficient, and \(\alpha>0\) is a kinetic rate parameter. The function \(g(u)\) describes the adsorption isotherm, which relates the mobile concentration to the equilibrium adsorbed amount.
-</p>
-
-<p>
-In collaboration with Dr. Malgorzata Peszynska, I studied stability of numerical schemes for these non-equilibrium kinetic systems. A key idea was to work in weighted spaces where the coupled system becomes symmetric, allowing stability results for implicit, explicit, and implicit-explicit discretizations.
-</p>
-
-<p>
-For example, in the linear case \(g(u)=cu\), the abstract kinetic system can be written as
-</p>
-
-$$
-U' + V' + L U = F,
-$$
-
-$$
-V' + \alpha(V-cU)=0.
-$$
-
-<p>
-Although the system may be nonnormal in the natural variables, a weighted inner product of the form
-</p>
-
-$$
-\left\langle [U,V]^T,[\Phi,\Psi]^T \right\rangle_c
-=
-c\langle U,\Phi\rangle
-+
-\langle V,\Psi\rangle
-$$
-
-<p>
-reveals a useful symmetric structure. This transformation makes it possible to establish strong stability of the continuous problem and of associated numerical schemes.
-</p>
-
-<p>
-Earlier work also included adsorption models based on Langmuir-type isotherms. In the single-component case, one commonly uses
-</p>
-
-$$
-a(u)=V_L \frac{bu}{1+bu},
-$$
-
-<p>
-where \(V_L\) is the Langmuir volume capacity and \(b\) is the Langmuir constant. For multicomponent adsorption, the mathematical structure becomes more delicate because thermodynamic consistency may fail for simple explicit extensions of the Langmuir model. This led to interest in implicit isotherm formulations such as the Ideal Adsorbed Solution framework.
-</p>
-
-<p>
-This research connects nonlinear transport, adsorption kinetics, numerical analysis, stability theory, and porous media modeling. It also continues to inform my broader interest in reduced models and data-driven approaches for complex multiscale systems.
-</p>
+				<p>
+					More broadly, my goal is to understand how mathematically interpretable representations can complement 
+					modern machine learning methods for scientific datasets with complex geometric and multiscale structure.
+				</p>
 
 
+				<!-- Mathematical Foundations and Earlier Research -->
+				<h2>Mathematical Foundations and Earlier Research</h2>
+
+				<h3>Functional Analysis</h3>
+
+				<p>
+					My early research was in functional analysis, particularly Banach function spaces and Orlicz spaces. 
+					This work developed my interest in how analytic structure can be used to understand complex spaces and 
+					operators. Ideas from functional analysis continue to influence how I approach representation, 
+					dimensionality, and mathematical structure in current computational problems.
+				</p>
+
+
+				<h3>Methane Hydrates and Phase Transitions in Porous Media</h3>
+
+				<span class="image left">
+					<img src="images/burning-ice.jpg" alt="Methane hydrates" />
+				</span>
+
+				<p>
+					My doctoral and early postdoctoral research included mathematical models for methane hydrate formation 
+					and dissociation in porous media. Methane hydrates are ice-like crystalline structures that form under 
+					conditions of high pressure and low temperature and are of interest in both energy and environmental applications.
+				</p>
+
+				<p>
+					The mathematical models involve nonlinear partial differential equations with phase transitions and 
+					solubility constraints. A representative formulation is
+				</p>
+
+				$$
+				\frac{\partial u}{\partial t}
+				-\nabla\cdot\big(D\nabla \chi\big)
+				= f,
+				\qquad
+				\chi \in \alpha(x,u),
+				\qquad
+				u=\chi S+R(1-S).
+				$$
+
+				<p>
+					Here \(u\) represents total methane content, while the multivalued relation \(\alpha(x,u)\) captures 
+					the phase transition associated with dissolved methane and methane hydrate.
+				</p>
+
+				<p>
+					In collaboration with colleagues at Oregon State University, I studied well-posedness, comparison 
+					principles, and numerical approximation for this class of models using techniques from nonlinear PDEs, 
+					monotone operator theory, convex analysis, and numerical analysis.
+				</p>
+
+
+				<h3>Adsorption Models and Non-Equilibrium Kinetic Systems</h3>
+
+				<span class="image right">
+					<img src="images/AdsorptionProcPoster.png" alt="Adsorption model poster" />
+				</span>
+
+				<p>
+					I have also worked on mathematical models for adsorption processes in porous media, motivated by 
+					applications including coalbed methane recovery, contaminant transport, and multicomponent gas displacement. 
+					These models couple transport of mobile chemical components with adsorption onto a solid matrix.
+				</p>
+
+				<p>
+					In collaboration with Dr. Malgorzata Peszynska, I studied stability of numerical schemes for 
+					non-equilibrium kinetic systems. A central idea was to formulate the coupled problem in appropriately 
+					weighted spaces, revealing a symmetric structure that permits stability analysis for implicit, explicit, 
+					and implicit-explicit discretizations.
+				</p>
+
+				<p>
+					This research brought together nonlinear transport, adsorption kinetics, numerical analysis, stability 
+					theory, and porous-media modeling. These themes continue to inform my interest in reduced models and 
+					data-driven approaches for complex multiscale systems.
+				</p>
 
 			</div>
 		</section>
