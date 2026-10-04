@@ -7,155 +7,248 @@
 -->
 
 <html>
-	<head>
-		<title>Miscellaneous</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+<head>
+
+	<title>Miscellaneous</title>
+
+	<meta charset="utf-8" />
+
+	<meta name="viewport"
+	      content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet"
+	      href="assets/css/main.css" />
 
 
 	<style>
 
-.gallery {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	max-width: 800px;
-     margin: 25px auto;
-}
+		/* Nature photo gallery */
 
-.gallery figure {
-	margin: 0;
-}
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(2, 260px);
+			gap: 35px;
+			justify-content: center;
+			margin: 25px auto 35px auto;
+		}
 
-.gallery {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 30px;
-	max-width: 800px;
-	margin: 25px auto;
-}
+		.gallery figure {
+			margin: 0;
+		}
+
+		.gallery img {
+			width: 100%;
+			max-width: 260px;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+			border-radius: 6px;
+		}
 
 
+		/* BJJ photo */
 
-/* BJJ photo */
+		.bjj-photo {
+			max-width: 300px;
+			margin: 20px auto 25px auto;
+			text-align: center;
+		}
 
-.bjj-photo {
-	max-width: 300px;
-	margin: 20px auto 25px auto;
-	text-align: center;
-}
+		.bjj-photo img {
+			width: 100%;
+			height: auto;
+			display: block;
+			border-radius: 6px;
+		}
 
-.bjj-photo img {
-	width: 100%;
-	height: auto;
-	display: block;
-	border-radius: 6px;
-}
+		.bjj-photo figcaption {
+			margin-top: 6px;
+			font-size: 0.85em;
+			font-style: italic;
+			color: #777;
+		}
 
-.bjj-photo figcaption {
-	margin-top: 6px;
-	font-size: 0.85em;
-	font-style: italic;
-	color: #777;
-}
 
-</style>
+		/* Responsive layout for smaller screens */
+
+		@media screen and (max-width: 650px) {
+
+			.gallery {
+				grid-template-columns: 1fr;
+				max-width: 260px;
+				gap: 20px;
+			}
+
+		}
+
+	</style>
 
 </head>
 
+
 <body>
 
+
 	<!-- Header -->
+
 	<header id="header">
-		<h1><strong><a href="index.html"> </a></strong></h1>
+
+		<h1>
+			<strong>
+				<a href="index.html"></a>
+			</strong>
+		</h1>
+
 		<nav id="nav">
+
 			<ul>
+
 				<li><a href="index.html">Home</a></li>
+
 				<li><a href="research.html">Research</a></li>
+
 				<li><a href="teaching.html">Teaching</a></li>
+
 				<li><a href="service.html">Service</a></li>
+
 				<li><a href="about.html">About</a></li>
+
 				<li><a href="news.html">News</a></li>
-				<li><a href="miscellaneous.html">Miscellaneous</a></li>
+
+				<li>
+					<a href="miscellaneous.html">
+						Miscellaneous
+					</a>
+				</li>
+
 			</ul>
+
 		</nav>
+
 	</header>
 
-	<a href="#menu" class="navPanelToggle">
+
+	<a href="#menu"
+	   class="navPanelToggle">
+
 		<span class="fa fa-bars"></span>
+
 	</a>
 
+
 	<!-- Main -->
-	<section id="main" class="wrapper">
+
+	<section id="main"
+	         class="wrapper">
+
 		<div class="container">
 
+
 			<header class="major special">
+
 				<h2>Miscellaneous</h2>
+
 			</header>
 
+
+
+			<!-- Art and cultural interests -->
+
 			<figure>
-				<img src="images/Dalifigueres.jpg" alt="Dali Museum-Theater, Figueres" />
-				<figcaption>Dalí Theatre-Museum — Figueres, Catalonia.</figcaption>
+
+				<img src="images/Dalifigueres.jpg"
+				     alt="Dalí Theatre-Museum in Figueres, Catalonia" />
+
+				<figcaption>
+					Dalí Theatre-Museum — Figueres, Catalonia.
+				</figcaption>
+
 			</figure>
 
+
 			<p>
-				Aside from mathematics, I love reading literature, philosophy, biographies,
-				art, and learning about different cultures. I practice Brazilian Jiu-Jitsu
+				Aside from mathematics, I love reading literature,
+				philosophy, biographies, art, and learning about
+				different cultures. I practice Brazilian Jiu-Jitsu
 				and enjoy exploring the city.
 			</p>
 
+
+
+			<!-- Brazilian Jiu-Jitsu -->
+
 			<figure class="bjj-photo">
-	<img src="images/Blue_belt_promotion.jpeg"
-	     alt="Brazilian Jiu-Jitsu blue belt promotion" />
-	<figcaption>Brazilian Jiu-Jitsu — blue belt promotion.</figcaption>
-</figure>
+
+				<img src="images/Blue_belt_promotion.jpeg"
+				     alt="Brazilian Jiu-Jitsu blue belt promotion" />
+
+				<figcaption>
+					Brazilian Jiu-Jitsu — blue belt promotion.
+				</figcaption>
+
+			</figure>
+
+
+
+			<!-- Travel and nature -->
 
 			<p>
-				I love traveling whenever possible. I try to stay in touch with nature.
-				
+				I love traveling whenever possible.
+				I try to stay in touch with nature.
 			</p>
 
-			
 
-			
+			<div class="gallery">
+
+				<figure>
+
+					<img src="images/cherry04.jpeg"
+					     alt="Cherry blossoms" />
+
+				</figure>
+
+
+				<figure>
+
+					<img src="images/cherry07.jpeg"
+					     alt="Cherry blossoms" />
+
+				</figure>
+
+			</div>
+
+
+
+			<!-- Community volunteering -->
 
 			<h3>Community Volunteering</h3>
 
+
 			<p>
-				I also volunteer in New York City, including projects with New York Cares and City Harvest focused on food access, 
-				community service, and environmental sustainability.
+				I also volunteer in New York City, including projects
+				with New York Cares and City Harvest focused on food
+				access, community service, and environmental
+				sustainability.
 			</p>
 
-			
 
 		</div>
 
-
-
-		<div class="gallery">
-
-				<figure>
-					<img src="images/cherry04.jpeg" alt="Cherry Blossom 4" />
-				</figure>
-			
-			    <figure>
-					<img src="images/cherry07.jpeg" alt="Cherry Blossom 7" />
-				</figure>
-				
-
-				
-
-			</div>
-		
 	</section>
 
+
+
 	<!-- Scripts -->
+
 	<script src="assets/js/jquery.min.js"></script>
+
 	<script src="assets/js/skel.min.js"></script>
+
 	<script src="assets/js/util.js"></script>
+
 	<script src="assets/js/main.js"></script>
 
-</body>
 
+</body>
 
 </html>
